@@ -13,6 +13,12 @@ a {
     color: inherit;
 }
 
+h1 {
+    font-family: "Rubik Mono One", monospace;
+    font-size: 64px;
+    transition: transform ease-out 2s;
+}
+
 /*Start of sidebar styling*/
 
 .sidebar {
@@ -116,3 +122,37 @@ a {
 }
 
 /* End of sidebar styling*/
+
+/*´Start of content styling*/
+
+.content {
+    display: flex;
+    width: 100%;
+}
+
+.content__container {
+    flex-direction: column;
+}
+
+.content__header {
+    background-color: #D8F2B8;
+    max-height: 200px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.content__header:hover {
+    h1 {
+        animation: titleZoom 3s ease-in;
+        transform: scale(1.2);
+    }
+}
+
+@keyframes titleZoom {
+    0% {transform: scale(1);}
+    75%{transform: scale(1.5);}
+    100%{transform: scale(1.2);}
+    
+}
+/*End of content styling*/
