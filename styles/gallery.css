@@ -128,9 +128,6 @@ h1 {
 .content {
     display: flex;
     width: 100%;
-}
-
-.content__container {
     flex-direction: column;
 }
 
@@ -140,6 +137,9 @@ h1 {
     height: 100%;
     align-items: center;
     justify-content: center;
+    z-index: 0;
+    position: sticky;
+    top: 0;
 }
 
 .content__header:hover {
@@ -153,6 +153,45 @@ h1 {
     0% {transform: scale(1);}
     75%{transform: scale(1.5);}
     100%{transform: scale(1.2);}
-    
 }
+
+.content__body {
+    padding-top: 20px;
+    background-color: #85AD9E;
+    z-index: 1;
+}
+
+.gallery-card {
+    display: flex;
+}
+
+.gallery-card__container {
+    max-height: 400px;
+    height: 100%;
+    margin: 0 20px 20px 20px;
+}
+
+.gallery-card__tab {
+    height: 250px;
+    width: 50px;
+    align-self: flex-start;
+
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#D8F2B8 75%, #D0EFA9);
+    border-radius: 10px 0 0 10px;
+}
+
+.gallery-name {
+    transform: rotate(-90deg);
+    font-size: 32px
+}
+.gallery-card__body  {
+    height: 400px;
+    width: 100%;
+    justify-self: stretch;
+    border-radius: 0 10px 10px 10px;
+    background-color: #D8F2B8;
+}
+
 /*End of content styling*/
