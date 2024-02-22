@@ -197,7 +197,6 @@ h1 {
 }
 
 .gallery-card__carousel {
-    background-color: #6C9D8B;
     max-width: inherit;
     width: 100%;
     justify-content: center;
@@ -231,9 +230,10 @@ h1 {
 .gallery-image__container:hover {
     position: relative;
     transform: scaleX(2);
+    z-index: 99;
     .gallery-image__content {
         background-color: #6C9D8B;
-        padding: 0px 4px;
+        border-width: 0px 4px;
         transform: scaleX(0.5);
         justify-self: center;
     }
