@@ -33,12 +33,13 @@ h1 {
     align-items: center;
     font-size: 18px;
     font-weight: 600;
+    padding: 0px 10px;
 }
 
 .logo {
     max-width: 150px;
     width: 100%;
-    margin: 20px;
+    margin: 20px 0px;
 }
 
 .navigation {
@@ -51,7 +52,7 @@ h1 {
     width: 100%;
     background-color: #85AD9E;
     border-radius: 20px;
-    margin-top: 20px;
+    margin: 20px 0px;
 }
 
 .navigation_container ul {
@@ -188,10 +189,53 @@ h1 {
 }
 .gallery-card__body  {
     height: 400px;
+    max-width: 1353px;
     width: 100%;
     justify-self: stretch;
     border-radius: 0 10px 10px 10px;
     background-color: #D8F2B8;
 }
 
+.gallery-card__carousel {
+    background-color: #6C9D8B;
+    max-width: inherit;
+    width: 100%;
+    justify-content: center;
+    margin: 15px;
+    border-radius: 7px;
+    overflow: hidden;
+
+}
+
+.gallery-image {
+    max-height: 370px;
+    height: 100%;
+}
+
+.gallery-image__container {
+    display: flex;
+    justify-content: center;
+    max-width: 300px;
+    overflow: hidden;
+    margin: 0 2px;
+    transition: transform 0.5s;
+}
+
+.gallery-image_1{
+    margin: 0 2px 0 0;
+}
+.gallery-image_5 {
+    margin: 0 0 0 2px;
+}
+
+.gallery-image__container:hover {
+    position: relative;
+    transform: scaleX(2);
+    .gallery-image__content {
+        background-color: #6C9D8B;
+        padding: 0px 4px;
+        transform: scaleX(0.5);
+        justify-self: center;
+    }
+}
 /*End of content styling*/
