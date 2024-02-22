@@ -1,0 +1,134 @@
+body{
+  max-width: 1440px;
+  width: 100%;
+  min-height: 1024px;
+  height: 100%;
+  background-color: #85AD9E;
+  margin: 0px;
+  padding: 0px;
+}
+/* the left side section */
+.left-container{
+  width: 200px;
+  height: 1024px;
+  background-color: #CD5C08;
+}
+.logo{
+  width: 150.27px;
+  height: 176.88px;
+  margin-top: 23.69px;
+  margin-left: 19.73px;
+}
+/* The Navbar */
+.navbar{
+  width: 180px;
+  height: 299px;
+  background-color: #85AD9E;
+  margin-top: 19.43px;
+  margin-left: 10px;
+  border-radius: 20px
+}
+/* The Unordered List */
+.ul{
+padding: 0px;
+}
+/* The Anchor For The Left Side Navbar they Have the same font and line height */
+ nav a{
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.33px;
+}
+.home1list{
+ background-color: #6C9D8B;
+ border-radius: 20px 20px 0px 0px;
+}
+/* The list it has the same display and the same width and height except the home link it has different color and Border radius */
+.home1list , .about-list , .Gallery-list , .contact-list{
+  width: 180px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.Home{
+  width: 51px;
+  height: 21px;
+  color:#001524;
+  margin-top: 14px;
+}
+.About-Us{
+  width: 81px;
+  height: 21px;
+  color: #F5E8B7;
+  margin-top: 15px;
+}
+.Gallery{
+  width: 63px;
+  height:21px;
+  color: #000000;
+  margin-top: 15px;
+}
+.Contact-Us{
+  width: 99px;
+  height: 21px;
+  color: #000000;
+  margin-top: 14px;
+}
+/* The lines have the same width and height and border and margin-bottom and color */
+.line1 , .line2 , .line3 , .line4{
+  width: 120px;
+  height: 0px;
+  border: 1px solid #6C9D8B;
+  margin-bottom: 0px;
+} 
+/* The icons box */
+.social-media-icons{
+  width: 151px;
+  height: 84px;
+  margin-top: 15px;
+  margin-left: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.fa-brands{
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.fa-instagram {
+  width: 31px;
+  height: 34px;
+  color: #001524;
+}
+.fa-tiktok{
+  width: 21px;
+  height: 24px;
+  color:#001524;
+}
+.fa-mastodon{
+  width: 21px;
+  height: 24px;
+  margin-left: 10px;
+  color: #001524;
+}
+.fa-twitter{
+  width: 35px;
+  height: 22px;
+  margin-left: 10px;
+  color: #F5E8B7;
+}
+.fa-unsplash{
+  width: 36px;
+  height: 42px;
+  margin-left: 30px;
+  color: #001524;
+}
+.fa-github{
+  width: 41px;
+  height: 42px;
+  color: #001524;
+}
+/* The end of the left side section */
