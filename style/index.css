@@ -120,6 +120,12 @@ padding: 0px;
   margin-left: 10px;
   color: #F5E8B7;
 }
+.fa-twitter:hover{
+  color: #1DA1F2;
+}
+.fa-twitter:active{
+  color: #000;
+}
 .fa-unsplash{
   width: 36px;
   height: 42px;
