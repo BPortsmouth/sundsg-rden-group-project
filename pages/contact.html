@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bdbebef376.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/gallery.css">
+    <link rel="icon" href="../images/VintageSoundsIcon.png">
+</head>
+
+<body>
+    <main>
+        <div class="sidebar"> <!--Container div for page's sidebar-->
+            <img src="../images/VintageSoundsLogo.png" class="logo"
+                alt="Logo consisting of three consentric hexagons, the two inner hexagons have a segment missing. On opposite sides of the outer hexagon are the words 'Vintage' and 'Sounds'"
+                title="Logo consisting of three consentric hexagons, the two inner hexagons have a segment missing. On opposite sides of the outer hexagon are the words 'Vintage' and 'Sounds'">
+            <section class="navigation navigation_container">
+                <nav class="navigation navigation__links">
+                    <ul>
+                        <li class="link"><a href="../index.html" class="link link__page link__page_home">
+                                <div class="link link_center-line"><span>Home</span></div>
+                            </a></li>
+                        <li class="link"><a href="../pages/about-us.html" class="link link__page">
+                                <div class="link link_center-line"><span>About Us</span></div>
+                            </a></li>
+                        <li class="link"><a href="../pages/gallery.html" class="link link__page" id="current-page">
+                                <div class="link link_center-line"><span>Gallery</span></div>
+                            </a></li>
+                        <li class="link"><a href="../pages/contact.html" class="link link__page">
+                                <div class="link link_center-line"><span>Contact Us</span></div>
+                            </a></li>
+                    </ul>
+                </nav>
+                <nav class="navigation navigation__socials">
+                    <ul>
+                        <li class="link link__container"><a href="#" class="link__social"><i
+                                    class="fa-brands fa-instagram fa-xl"></i></a></li>
+                        <li class="link link__container"><a href="#" class="link__social"><i
+                                    class="fa-brands fa-mastodon fa-xl"></i></a></li>
+                        <li class="link link__container"><a href="#" class="link__social"><i
+                                    class="fa-brands fa-tiktok fa-xl"></i></a></li>
+                        <li class="link link__container"><a href="#" class="link__social"><i
+                                    class="fa-brands fa-x-twitter fa-xl"></i></a></li>
+                        <li class="link link__container"><a
+                                href="https://github.com/BPortsmouth/sundsgarden-group-project" target="_blank"
+                                class="link__social"><i class="fa-brands fa-github fa-xl"></i></a></li>
+                        <li class="link link__container"><a href="https://unsplash.com/" target="_blank"
+                                class="link__social"><i class="fa-brands fa-unsplash fa-xl"></i></a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <header>
+            <h1>CONTACT</h1>
+        </header>
+        <section id="contact.info">
+            <h2>Contact information: </h2>
+            <p>Address: <span>SUNDSGÅRDENS FOLKHÖGSKOLA, Örbyvägen 10, SE-257 30 RYDEBÄCK</span></p>
+            <p>Tel: <span>042-19 38 00</span></p>
+            <p>Fax: <span>042-19 38 50</span></p>
+            <p>E-mail: <span><a href="mailto:info@sundsgarden.se">info@sundsgarden.se</a></span></p>
+        </section>
+        <section id="map">
+
+        </section>
+        <section>
+            <section id="contact-form">
+                <h2>Kontakta oss</h2>
+                <form action="#" method="POST">
+                    <div>
+                        <label for="name">Namn:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="phone">Telefonnummer:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div>
+                        <label for="message">Meddelande:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Skicka</button>
+                </form>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>
