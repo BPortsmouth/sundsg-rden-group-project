@@ -1,4 +1,4 @@
-body{
+body {
   max-width: 1440px;
   width: 100%;
   min-height: 1024px;
@@ -8,20 +8,23 @@ body{
   padding: 0px;
   display: flex;
 }
+
 /* the left side section */
-.left-container{
+.left-container {
   width: 200px;
   height: 1024px;
   background-color: #CD5C08;
 }
-.logo{
+
+.logo {
   width: 150.27px;
   height: 176.88px;
   margin-top: 23.69px;
   margin-left: 19.73px;
 }
+
 /* The Navbar */
-.navbar{
+.navbar {
   width: 180px;
   height: 299px;
   background-color: #85AD9E;
@@ -29,24 +32,31 @@ body{
   margin-left: 10px;
   border-radius: 20px
 }
+
 /* The Unordered List */
-.ul{
-padding: 0px;
+.ul {
+  padding: 0px;
 }
+
 /* The Anchor For The Left Side Navbar they Have the same font and line height */
- nav a{
+nav a {
   text-decoration: none;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 21.33px;
 }
-.home1list{
- background-color: #6C9D8B;
- border-radius: 20px 20px 0px 0px;
+
+.home1list {
+  background-color: #6C9D8B;
+  border-radius: 20px 20px 0px 0px;
 }
+
 /* The list it has the same display and the same width and height except the home link it has different color and Border radius */
-.home1list , .about-list , .Gallery-list , .contact-list{
+.home1list,
+.about-list,
+.Gallery-list,
+.contact-list {
   width: 180px;
   height: 50px;
   display: flex;
@@ -54,39 +64,48 @@ padding: 0px;
   justify-content: space-between;
   align-items: center;
 }
-.Home{
+
+.Home {
   width: 51px;
   height: 21px;
-  color:#001524;
+  color: #001524;
   margin-top: 14px;
 }
-.About-Us{
+
+.About-Us {
   width: 81px;
   height: 21px;
   color: #F5E8B7;
   margin-top: 15px;
 }
-.Gallery{
+
+.Gallery {
   width: 63px;
-  height:21px;
+  height: 21px;
   color: #000000;
   margin-top: 15px;
 }
-.Contact-Us{
+
+.Contact-Us {
   width: 99px;
   height: 21px;
   color: #000000;
   margin-top: 14px;
 }
+
 /* The lines have the same width and height and border and margin-bottom and color */
-.line1 , .line2 , .line3 , .line4{
+.line1,
+.line2,
+.line3,
+.line4 {
   width: 120px;
   height: 0px;
   border: 1px solid #6C9D8B;
   margin-bottom: 0px;
-} 
+}
+
 /* The icons box */
-.social-media-icons{
+.social-media-icons {
   width: 151px;
   height: 84px;
   margin-top: 15px;
@@ -94,53 +113,62 @@ padding: 0px;
   flex-wrap: wrap;
   align-items: flex-start;
 }
-.fa-brands{
+
+.fa-brands {
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
 }
+
 .fa-instagram {
   width: 31px;
   height: 34px;
   color: #001524;
 }
-.fa-tiktok{
+
+.fa-tiktok {
   width: 21px;
   height: 24px;
-  color:#001524;
+  color: #001524;
 }
-.fa-mastodon{
+
+.fa-mastodon {
   width: 21px;
   height: 24px;
   margin-left: 10px;
   color: #001524;
 }
-.fa-twitter{
+
+.fa-twitter {
   width: 35px;
   height: 22px;
   margin-left: 10px;
   color: #F5E8B7;
 }
-.fa-twitter:hover{
+
+.fa-twitter:hover {
   color: #1DA1F2;
 }
-.fa-twitter:active{
+
+.fa-twitter:active {
   color: #000;
 }
-.fa-unsplash{
+
+.fa-unsplash {
   width: 36px;
   height: 42px;
   margin-left: 30px;
   color: #001524;
 }
-.fa-github{
+
+.fa-github {
   width: 41px;
   height: 42px;
   color: #001524;
 }
+
 /* The end of the left side section */
-.grid-_container{
-  background-color: #d2f21d;
+.grid-_container {
   display: grid;
   grid-template-columns: 25em 43.75em;
   grid-template-rows: 1fr 1fr;
@@ -149,18 +177,47 @@ padding: 0px;
   margin: 3.75em;
   gap: 1.25em;
 }
-.header{
-  background-color: #001524;
+
+.header {
+  background-image: url(../img/pexels-bryan-catota-3756766.jpg);
+  background-size: cover;
   grid-column: 1/2;
   grid-row: 1/-1;
+  padding: 10px;
 }
-.main{
-  background-color: red;
-  grid-column:2/3;
-  grid-row:1/2;
+
+.h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  font-style: italic;
+  color: #ffff;
 }
-.footer{
+
+.topic {
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  font-style: italic;
+  color: white;
+  position: relative;
+  top: 150px;
+}
+.main {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.h2{
+  font-family: "Rubik", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 2px;
+  color: #ffff;
+}
+
+.footer {
   background-color: green;
-  grid-column:2/3;
-  grid-row:2/2;
+  grid-column: 2/3;
+  grid-row: 2/2;
 }
