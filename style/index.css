@@ -6,6 +6,7 @@ body{
   background-color: #85AD9E;
   margin: 0px;
   padding: 0px;
+  display: flex;
 }
 /* the left side section */
 .left-container{
@@ -138,3 +139,28 @@ padding: 0px;
   color: #001524;
 }
 /* The end of the left side section */
+.grid-_container{
+  background-color: #d2f21d;
+  display: grid;
+  grid-template-columns: 25em 43.75em;
+  grid-template-rows: 1fr 1fr;
+  width: 1120px;
+  height: 900px;
+  margin: 3.75em;
+  gap: 1.25em;
+}
+.header{
+  background-color: #001524;
+  grid-column: 1/2;
+  grid-row: 1/-1;
+}
+.main{
+  background-color: red;
+  grid-column:2/3;
+  grid-row:1/2;
+}
+.footer{
+  background-color: green;
+  grid-column:2/3;
+  grid-row:2/2;
+}
