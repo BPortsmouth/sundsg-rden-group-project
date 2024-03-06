@@ -12,8 +12,9 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/bdbebef376.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="../styles/gallery.css">
     <link rel="icon" href="../images/VintageSoundsIcon.png">
+    <link rel="stylesheet" href="../styles/contact.css">
+
 </head>
 
 <body>
@@ -59,25 +60,32 @@
             </section>
         </div>
 
-        <header>
-            <h1>CONTACT</h1>
-        </header>
-        <section id="contact.info">
-            <h2>Contact information: </h2>
-            <p>Address: <span>SUNDSGÅRDENS FOLKHÖGSKOLA, Örbyvägen 10, SE-257 30 RYDEBÄCK</span></p>
-            <p>Tel: <span>042-19 38 00</span></p>
-            <p>Fax: <span>042-19 38 50</span></p>
-            <p>E-mail: <span><a href="mailto:info@sundsgarden.se">info@sundsgarden.se</a></span></p>
-        </section>
-        <section id="map">
+        <div class="contact.container">
+            <header>
+                <h1>CONTACT</h1>
+            </header>
+            <div class="contact.content">
+                <section class="contact.info">
+                    <h2>Contact information:</h2>
+                    <p>Address: <span>SUNDSGÅRDENS FOLKHÖGSKOLA, Örbyvägen 10, SE-257 30 RYDEBÄCK</span></p>
+                    <p>Tel: <span>042-19 38 00</span></p>
+                    <p>Fax: <span>042-19 38 50</span></p>
+                    <p>E-mail: <span><a href="mailto:info@sundsgarden.se">info@sundsgarden.se</a></span></p>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.377989747518!2d12.777191315804977!3d56.03989008023157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46538b248a91ebff%3A0x10e0df9c3cbe86f!2sSUNDSG%C3%85RDENS%20FOLKH%C3%96GSKOLA%2C%20%C3%96rbyv%C3%A4gen%2010%2C%20SE-257%2030%20RYDEB%C3%84CK!5e0!3m2!1ssv!2sse!4v1645403074589!5m2!1ssv!2sse"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </section>
 
-        </section>
-        <section>
+
+            </div>
+
             <section id="contact-form">
-                <h2>Kontakta oss</h2>
+                <h3>Contact us</h3>
                 <form action="#" method="POST">
                     <div>
-                        <label for="name">Namn:</label>
+                        <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required>
                     </div>
                     <div>
@@ -85,18 +93,25 @@
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div>
-                        <label for="phone">Telefonnummer:</label>
+                        <label for="phone">Tel:</label>
                         <input type="tel" id="phone" name="phone">
                     </div>
                     <div>
-                        <label for="message">Meddelande:</label>
+                        <label for="message">Message:</label>
                         <textarea id="message" name="message" rows="4" required></textarea>
                     </div>
-                    <button type="submit">Skicka</button>
+                    <div>
+                        <label for="subscribe">Subscribe to our newsletter:</label>
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">Yes, I want to receive news and updates.</label>
+                    </div>
+                    <button type="submit">Send</button>
                 </form>
             </section>
-        </section>
+        </div>
+
     </main>
 </body>
+
 
 </html>
