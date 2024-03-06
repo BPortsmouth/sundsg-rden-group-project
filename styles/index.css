@@ -1,0 +1,403 @@
+body {
+    max-width: 1440px;
+    width: 100%;
+    min-height: 1024px;
+    height: 100%;
+    background-color: #85AD9E;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+  }
+  
+  /* the left side section */
+  .left-container {
+    width: 200px;
+    height: 1024px;
+    background-color: #CD5C08;
+  }
+  
+  .logo {
+    width: 150.27px;
+    height: 176.88px;
+    margin-top: 23.69px;
+    margin-left: 19.73px;
+  }
+  
+  /* The Navbar */
+  .navbar {
+    width: 180px;
+    height: 299px;
+    background-color: #85AD9E;
+    margin-top: 19.43px;
+    margin-left: 10px;
+    border-radius: 20px
+  }
+  
+  /* The Unordered List */
+  .ul {
+    padding: 0px;
+  }
+  
+  /* The Anchor For The Left Side Navbar they Have the same font and line height */
+  nav a {
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.33px;
+  }
+  
+  .home1list {
+    background-color: #6C9D8B;
+    border-radius: 20px 20px 0px 0px;
+  }
+  
+  /* The list it has the same display and the same width and height except the home link it has different color and Border radius */
+  .home1list,
+  .about-list,
+  .Gallery-list,
+  .contact-list {
+    width: 180px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .Home {
+    width: 51px;
+    height: 21px;
+    color: #001524;
+    margin-top: 14px;
+    transition: color 0.15s;
+  }
+  
+  .About-Us {
+    width: 81px;
+    height: 21px;
+    color: #000000;
+    margin-top: 15px;
+    transition: color 0.15s;
+  }
+  
+  .Gallery {
+    width: 63px;
+    height: 21px;
+    color: #000000;
+    margin-top: 15px;
+    transition: color 0.15s;
+  }
+  
+  .Contact-Us {
+    width: 99px;
+    height: 21px;
+    color: #000000;
+    margin-top: 14px;
+    transition: color 0.15s;
+  }
+  
+  .Home:hover {
+    color: #F5E8B7;
+  }
+  
+  .Home:active {
+    color: #000000;
+  }
+  
+  .About-Us:hover {
+    color: #F5E8B7;
+  }
+  
+  .About-Us:active {
+    color: #000000;
+  }
+  
+  .Gallery:hover {
+    color: #F5E8B7;
+  }
+  
+  .Gallery:active {
+    color: #000000;
+  }
+  
+  .Contact-Us:hover {
+    color: #F5E8B7;
+  }
+  
+  .Contact-Us:active {
+    color: #000000;
+  }
+  
+  
+  /* The lines have the same width and height and border and margin-bottom and color */
+  .line1,
+  .line2,
+  .line3,
+  .line4 {
+    width: 120px;
+    height: 0px;
+    border: 1px solid #6C9D8B;
+    margin-bottom: 0px;
+  }
+  
+  /* The icons box */
+  .social-media-icons {
+    width: 151px;
+    height: 84px;
+    margin-top: 15px;
+    margin-left: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  .fa-brands {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    transition: color 0.15s;
+  }
+  
+  .fa-instagram {
+    width: 31px;
+    height: 34px;
+    color: #001524;
+  }
+  
+  .fa-tiktok {
+    width: 21px;
+    height: 24px;
+    color: #001524;
+  }
+  
+  .fa-mastodon {
+    width: 21px;
+    height: 24px;
+    margin-left: 10px;
+    color: #001524;
+  }
+  
+  .fa-x-twitter {
+    width: 35px;
+    height: 22px;
+    margin-left: 10px;
+    color: #001524;
+  }
+  
+  .fa-brands:hover {
+    color: #F5E8B7;
+  }
+  
+  .fa-brands:active {
+    color: #001524;
+  }
+  
+  .fa-unsplash {
+    width: 36px;
+    height: 42px;
+    margin-left: 30px;
+    color: #001524;
+  }
+  
+  .fa-github {
+    width: 41px;
+    height: 42px;
+    color: #001524;
+  }
+  /* The end of the left side section */
+  /* grid container It contains three main elements Header, main and footer  */
+  .grid-_container {
+    display: grid;
+    grid-template-columns: 25em 43.75em;
+    grid-template-rows: 1fr 1fr;
+    width: 70em;
+    height: 56.25em;
+    margin: 3.75em;
+    gap: 1.25em;
+  }
+  /* start of header section  */
+  .header {
+    background-image: url(../img/bacground.jpg);
+    background-size: cover;
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    padding: 0.625em;
+  }
+  .h1 {
+    font-family: "Rubik", sans-serif;
+    font-size: 2.5em;
+    font-weight: 600;
+    font-style: italic;
+    color: #ffff;
+  }
+  .topic {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.875em;
+    font-weight: 500;
+    font-style: italic;
+    color: white;
+    position: relative;
+    top: 9.375em;
+  }
+  /* end of header section  */
+  /* start of mian section  */
+  .main {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .h2 {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.875em;
+    font-weight: 600;
+    font-style: italic;
+    color: #ffff;
+  }
+  .h2_topic {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.25em;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 1px;
+    color: #ffff;
+  }
+  .h3 {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.25em;
+    font-weight: 400;
+    color: #fff;
+  }
+  .h3_topic {
+    font-family: "Rubik", sans-serif;
+    font-size: 0.938em;
+    font-weight: 400;
+    letter-spacing: 0.063em;
+    color: #fff;
+  }
+  /* end of header section  */
+  /* start of footer section  */
+  .footer {
+    grid-column: 2/3;
+    grid-row: 2/2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .h4 {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    justify-self: center;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.875em;
+    font-weight: 600;
+    font-style: italic;
+    color: #ffff;
+  }
+  /* svg contaier */
+  svg {
+    width: 18.125em;
+    height: 9.375em;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .div_ul1_footer {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    position: relative;
+    top: 2.5em;
+  }
+  .sgin_Up {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color: #a50707;
+    position: relative;
+    top: 2.5em;
+    left: 0.938em;
+    align-self: center;
+    width: 18.75em;
+    height: 3.125em;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  .sgin_Up:hover {
+    opacity: 0.70;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+  .sgin_Up:active {
+    opacity: 0.30;
+  }
+  .a_button {
+    color: #ffff;
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.563em;
+    font-weight: 600;
+    line-height: 1.333em;
+  }
+  .div_ul2_footer {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    position: relative;
+    top: 2.5em;
+  }
+  .a_about_us_footer,
+  .a_gallery_footer,
+  .a_contact_us_footer,
+  .blog,
+  .support,
+  .careers {
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    color: #000;
+    transition: color 0.20s;
+  }
+  .a_about_us_footer:hover {
+    color: #F5E8B7;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+  .a_about_us_footer:active {
+    color: #000;
+  }
+  .a_gallery_footer:hover {
+    color: #F5E8B7;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+  .a_gallery_footer:active {
+    color: #000;
+  }
+  .a_contact_us_footer:hover {
+    color: #F5E8B7;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+  .a_contact_us_footer:active {
+    color: #000;
+  }
+  .blog:hover {
+    color: #F5E8B7;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+  .blog:active {
+    color: #000;
+  }
+  .support:hover {
+    color: #F5E8B7;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+  .support:active {
+    color: #000;
+  }
+  .careers:hover {
+    color: #F5E8B7;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+  .careers:active {
+    color: #000;
+  }
+  .contact_ul,
+  .Services_ul{
+    list-style: none;
+  }
+  /* end of footer section  */
