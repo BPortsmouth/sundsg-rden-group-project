@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <main>
+    <header>
         <div class="sidebar"> <!--Container div for page's sidebar-->
             <img src="../images/VintageSoundsLogo.png" class="logo"
                 alt="Logo consisting of three consentric hexagons, the two inner hexagons have a segment missing. On opposite sides of the outer hexagon are the words 'Vintage' and 'Sounds'"
@@ -32,10 +32,10 @@
                         <li class="link"><a href="../pages/about-us.html" class="link link__page">
                                 <div class="link link_center-line"><span>About Us</span></div>
                             </a></li>
-                        <li class="link"><a href="../pages/gallery.html" class="link link__page" id="current-page">
+                        <li class="link"><a href="../pages/gallery.html" class="link link__page">
                                 <div class="link link_center-line"><span>Gallery</span></div>
                             </a></li>
-                        <li class="link"><a href="../pages/contact.html" class="link link__page">
+                        <li class="link"><a href="../pages/contact.html" class="link link__page" id="current-page">
                                 <div class="link link_center-line"><span>Contact Us</span></div>
                             </a></li>
                     </ul>
@@ -58,30 +58,29 @@
                     </ul>
                 </nav>
             </section>
+
         </div>
 
-        <div class="contact.container">
-            <header>
-                <h1>CONTACT</h1>
-            </header>
-            <div class="contact.content">
-                <section class="contact.info">
-                    <h2>Contact information:</h2>
-                    <p>Address: <span>SUNDSGÅRDENS FOLKHÖGSKOLA, Örbyvägen 10, SE-257 30 RYDEBÄCK</span></p>
-                    <p>Tel: <span>042-19 38 00</span></p>
-                    <p>Fax: <span>042-19 38 50</span></p>
-                    <p>E-mail: <span><a href="mailto:info@sundsgarden.se">info@sundsgarden.se</a></span></p>
-                    <div class="map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.377989747518!2d12.777191315804977!3d56.03989008023157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46538b248a91ebff%3A0x10e0df9c3cbe86f!2sSUNDSG%C3%85RDENS%20FOLKH%C3%96GSKOLA%2C%20%C3%96rbyv%C3%A4gen%2010%2C%20SE-257%2030%20RYDEB%C3%84CK!5e0!3m2!1ssv!2sse!4v1645403074589!5m2!1ssv!2sse"
-                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                </section>
-
-
+    </header>
+    <main>
+        <div class="grid_container">
+            <div class="grid_top_h1">
+                <h1 class="h1">CONTACT</h1>
             </div>
-
-            <section id="contact-form">
+            <div class="grid_item_contact">
+                <h2 class="h2">Contact information:</h2>
+                <p>Address: <span>SUNDSGÅRDENS FOLKHÖGSKOLA, Örbyvägen 10, SE-257 30 RYDEBÄCK</span></p>
+                <p>Tel: <span>042-19 38 00</span></p>
+                <p>Fax: <span>042-19 38 50</span></p>
+                <p>E-mail: <span><a href="mailto:info@sundsgarden.se">info@sundsgarden.se</a></span></p>
+            </div>
+            <div class="grid_item_map">
+                <h3>Map</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.377989747518!2d12.777191315804977!3d56.03989008023157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46538b248a91ebff%3A0x10e0df9c3cbe86f!2sSUNDSG%C3%85RDENS%20FOLKH%C3%96GSKOLA%2C%20%C3%96rbyv%C3%A4gen%2010%2C%20SE-257%2030%20RYDEB%C3%84CK!5e0!3m2!1ssv!2sse!4v1645403074589!5m2!1ssv!2sse"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="grid_item_form">
                 <h3>Contact us</h3>
                 <form action="#" method="POST">
                     <div>
@@ -101,16 +100,22 @@
                         <textarea id="message" name="message" rows="4" required></textarea>
                     </div>
                     <div>
-                        <label for="subscribe">Subscribe to our newsletter:</label>
+                        <label for="subscribe">Subscribe to our newsletter: 
+                            Yes, I want to receive news and
+                            updates.</label>
                         <input type="checkbox" id="subscribe" name="subscribe">
-                        <label for="subscribe">Yes, I want to receive news and updates.</label>
                     </div>
                     <button type="submit">Send</button>
                 </form>
-            </section>
+
+
+
+            </div>
         </div>
 
     </main>
+
+
 </body>
 
 
