@@ -15,6 +15,13 @@ a {
     color: inherit;
 }
 
+main {
+    width: 100%;
+    min-width: auto;
+    height: 100%;
+    min-height: 1024px;
+}
+
 
 /*Start of sidebar styling*/
 
@@ -131,20 +138,15 @@ a {
 /*´Start of content styling*/
 
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 .grid_container {
     display: grid;
-    margin-left: 15px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1268px;
+    width: calc(100% - 10px);
+    min-height: 200px;
+    height: 100%;
+    margin: 0 auto;
+    margin-left: 2.5em;
 }
 
 .grid_top_h1 {
@@ -153,7 +155,10 @@ a {
     justify-content: center;
     align-items: center;
     background-color: #D8F2B8;
+    width: 100%;
     height: 100px;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 .h1 {
@@ -164,26 +169,55 @@ a {
     margin: 0;
 }
 
-.grid_item_contact, .grid_item_map, .grid_item_form {
-    background-color: #D8F2B8;
+
+.grid_item_contact {
+    grid-column: 1;
+    grid-row: 2;
+    min-height: 423px;
+    height: 100px;
+    max-width: 550px;
+    width: 100%;
     padding: 20px;
     border-radius: 10px;
+    background-color: #D8F2B8;
+    margin: 0 auto;
+    
 }
 
-.grid_item_contact, .grid_item_map {
-    height: auto;
+.grid_item_form {
+    grid-column: 2;
+    grid-row: 2 / span 2;
+    height: 100%;
+    min-height: 840px;
+    width: 100%;
+    max-width: 550px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #D8F2B8;
+    margin: 0 auto;
+
 }
+
+.grid_item_map {
+    grid-column: 1;
+    grid-row: 3;
+    height: auto;
+    min-height: 200px;
+    width: 100%;
+    max-width: 550px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #D8F2B8;
+    margin: 0 auto;
+}
+
 
 .grid_item_map iframe {
     width: 100%;
     height: 300px;
+    min-width: 100%;
 }
 
-.grid_item_form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .form-group {
     margin-bottom: 20px;
